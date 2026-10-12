@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Ruby Di! 💖✨</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Floating Background Particles Container -->
+    <div class="particles-container" id="particlesContainer"></div>
+
+    <!-- Audio Player Element -->
+    <audio id="bgMusic" loop>
+        <source src="audio/birthday-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo">Ruby's Day ✨</a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#wishes">Wishes</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#letter">Special Letter</a>
+                <a href="#surprise">Surprise Gift</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="musicToggle" class="icon-btn" aria-label="Toggle Music" title="Play Birthday Music">🎵</button>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme" title="Switch Theme">🌙</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-glow"></div>
+        <div class="hero-content container">
+            <div class="badge animate-fade-in">
+                <span>13 OCTOBER — YOUR SPECIAL DAY 🎉</span>
+            </div>
+            <h1 class="hero-title animate-slide-up">Happy Birthday, <span class="highlight-name">Ruby Di!</span> 💖</h1>
+            <p class="hero-subtitle animate-slide-up">
+                Today is all about you, your beautiful smile, and the happiness you bring into this world. May your life always shine with love, laughter, success, and endless magical moments. ✨
+            </p>
+
+            <!-- Countdown Timer -->
+            <div class="countdown-card animate-slide-up" id="countdownCard">
+                <div class="countdown-item"><span id="days">00</span><label>Days</label></div>
+                <div class="countdown-sep">:</div>
+                <div class="countdown-item"><span id="hours">00</span><label>Hours</label></div>
+                <div class="countdown-sep">:</div>
+                <div class="countdown-item"><span id="minutes">00</span><label>Minutes</label></div>
+                <div class="countdown-sep">:</div>
+                <div class="countdown-item"><span id="seconds">00</span><label>Seconds</label></div>
+            </div>
+
+            <div class="hero-actions animate-slide-up">
+                <a href="#surprise" class="btn btn-primary shimmer-btn">🎁 Open Your Birthday Surprise</a>
+                <button class="btn btn-secondary" id="celebrateBtn">🎉 Celebrate Now!</button>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Birthday Wishes Cards Section -->
+    <section id="wishes" class="section wishes-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Heartfelt Blessings</span>
+                <h2>Wishes For Your New Year ✨</h2>
+                <p>May every single day ahead bring you closer to your deepest heart's desires.</p>
+            </div>
+
+            <div class="wishes-grid">
+                <!-- Card 1 -->
+                <div class="wish-card glow-card">
+                    <div class="wish-icon">😊</div>
+                    <h3>Happiness</h3>
+                    <p>May your days be filled with genuine smiles, beautiful memories, and endless reasons to be happy.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="wish-card glow-card">
+                    <div class="wish-icon">🌟</div>
+                    <h3>Success</h3>
+                    <p>May every dream you pursue bring you closer to the future you imagine and brilliantly achieve.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="wish-card glow-card">
+                    <div class="wish-icon">💖</div>
+                    <h3>Love</h3>
+                    <p>May you always be surrounded by kindness, warmth, affection, and people who truly value your soul.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="wish-card glow-card">
+                    <div class="wish-icon">✨</div>
+                    <h3>Magic</h3>
+                    <p>May this new year of your life bring wonderful surprises, exciting adventures, and unforgettable moments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Precious Moments</span>
+                <h2>Ruby's Memory Gallery 📸</h2>
+                <p>Capturing the grace, joy, and luminous beauty of your journey.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-card glow-card">
+                    <img src="images/ruby-1.jpg" alt="Ruby's special memory" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Radiant Smile ✨</span>
+                    </div>
+                </div>
+                <div class="gallery-card glow-card">
+                    <img src="images/ruby-2.jpg" alt="A beautiful birthday memory" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Precious Moments 💖</span>
+                    </div>
+                </div>
+                <div class="gallery-card glow-card">
+                    <img src="images/ruby-3.jpg" alt="A magical celebration" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Unforgettable Days 🌟</span>
+                    </div>
+                </div>
+                <div class="gallery-card glow-card">
+                    <img src="images/birthday-cover.jpg" alt="Birthday celebration cover" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Happy Birthday Ruby Di! 🎉</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-img" id="lightboxImg" alt="Enlarged memory view">
+    </div>
+
+    <!-- Heartfelt Letter Section -->
+    <section id="letter" class="section letter-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Personal Note</span>
+                <h2>A Little Letter for Ruby Di 💌</h2>
+            </div>
+
+            <div class="letter-container glow-card">
+                <div class="letter-seal">R 💖</div>
+                <div class="letter-content" id="letterContent">
+                    <p class="letter-salutation">Dear Ruby Di,</p>
+                    <p>Today is a beautiful reminder of how remarkably special you are. May your birthday fill your heart with absolute happiness, your life with unforgettable memories, and your future with countless luminous opportunities.</p>
+                    <p>May you always have the courage to follow your dreams, the strength to overcome every challenge, and the people around you who make you feel deeply loved and appreciated.</p>
+                    <p>Keep smiling, keep shining, and never forget how wonderful you truly are.</p>
+                    <p>May this new chapter of your life be filled with laughter, peace, success, love, and beautiful surprises.</p>
+                    <p class="highlight-closing"><strong>Happy Birthday, Ruby Di! May your 13 October be as lovely and extraordinary as you are. 🎂💖</strong></p>
+                    <p class="letter-signoff">
+                        With lots of happiness and warm wishes,<br>
+                        <span class="signature-font">Someone Who Wishes You Endless Joy ✨</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Surprise Gift Box Section -->
+    <section id="surprise" class="section surprise-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Interactive Magic</span>
+                <h2>Ruby Di, A Little Surprise Just for You! 🎁</h2>
+                <p>Something wonderful is waiting. Tap the gift box to open it!</p>
+            </div>
+
+            <div class="gift-box-wrapper" id="giftBoxWrapper">
+                <div class="gift-box" id="giftBox">
+                    <div class="gift-lid">
+                        <div class="gift-bow">🎀</div>
+                    </div>
+                    <div class="gift-body"></div>
+                </div>
+                <div class="gift-prompt" id="giftPrompt">Tap to Open 🎁</div>
+            </div>
+
+            <!-- Revealed Surprise Content -->
+            <div class="surprise-reveal hidden" id="surpriseReveal">
+                <div class="reveal-card glow-card">
+                    <div class="floating-heart-icon">💖</div>
+                    <h3>SURPRISE! You Are Loved Beyond Measure!</h3>
+                    <p class="reveal-message">
+                        "Ruby Di, you bring sunshine on cloudy days and pure magic into ordinary moments. May this birthday mark the beginning of your greatest, most joyful year yet!"
+                    </p>
+                    <div class="wish-tags">
+                        <span>✨ Endless Joy</span>
+                        <span>🌟 Wild Success</span>
+                        <span>💖 True Love</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Celebration Section -->
+    <section class="section final-section">
+        <div class="container final-container glow-card">
+            <h2>Happy Birthday, Ruby Di! 🎂💖</h2>
+            <p>May your life always sparkle with happiness, your heart overflow with love, and your dreams turn into breathtaking realities.</p>
+            <div class="final-action">
+                <button class="btn btn-primary shimmer-btn" id="finalLoveBtn">💗 Send Ruby All the Happiness!</button>
+            </div>
+            <p class="footer-credit">Made with 💖 to make Ruby's birthday extra magical.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Crafted with love for Ruby's 13 October Birthday ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
